@@ -9,16 +9,6 @@
 // Memo
 char *cache[CACHE_LIMIT + 1] = {NULL};
 
-// Number to word mappings
-const char *ones[] = {"",        "one",       "two",      "three",
-                      "four",    "five",      "six",      "seven",
-                      "eight",   "nine",      "ten",      "eleven",
-                      "twelve",  "thirteen",  "fourteen", "fifteen",
-                      "sixteen", "seventeen", "eighteen", "nineteen"};
-const char *tens[] = {"",      "",      "twenty",  "thirty", "forty",
-                      "fifty", "sixty", "seventy", "eighty", "ninety"};
-const char *thousands[] = {"", "thousand", "million", "billion"};
-
 // Function to load cache from file
 void load_cache() {
     FILE *file = fopen(CACHE_FILE, "r");

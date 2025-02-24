@@ -3,6 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Number to word mappings
+const char *ones[] = {"",        "one",       "two",      "three",
+                      "four",    "five",      "six",      "seven",
+                      "eight",   "nine",      "ten",      "eleven",
+                      "twelve",  "thirteen",  "fourteen", "fifteen",
+                      "sixteen", "seventeen", "eighteen", "nineteen"};
+const char *tens[] = {"",      "",      "twenty",  "thirty", "forty",
+                      "fifty", "sixty", "seventy", "eighty", "ninety"};
+const char *thousands[] = {"", "thousand", "million", "billion"};
 
 // Converts number to words
 void number_to_words(long num, char *buffer) {
